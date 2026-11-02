@@ -1,0 +1,32 @@
+{
+  "name": "handoff-anywhere",
+  "version": "0.1.0",
+  "description": "Cross-agent project progress that survives rate limits: per-tool journal + human-readable handoff.",
+  "type": "module",
+  "main": "adapters/opencode/index.mjs",
+  "exports": {
+    ".": "./adapters/opencode/index.mjs",
+    "./core": "./src/core.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "handoff-anywhere": "bin/handoff-anywhere.mjs"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": [
+    "src",
+    "adapters",
+    "skills",
+    "commands",
+    "bin",
+    "README.md",
+    "README.zh-TW.md",
+    "LICENSE",
+    "SECURITY.md"
+  ]
+}
